@@ -7,7 +7,7 @@
     "test": "standard && mocha"
   },
   "dependencies": {
-    "decode-ico": "^0.1.1",
+    "decode-ico": "^0.1.2",
     "lodepng": "^1.0.0",
     "resize-image-data": "^0.1.0"
   },
