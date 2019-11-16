@@ -1,12 +1,10 @@
-'use strict'
-
 const lodepng = require('lodepng')
 const decodeIco = require('decode-ico')
 const resizeImageData = require('resize-image-data')
 
 function toPng (image) {
   return (image.type === 'png')
-    ? Promise.resolve(image.data)
+    ? Promise.resolve(Buffer.from(image.data.buffer, image.data.byteLength, image.data.byteOffset))
     : lodepng.encode(image)
 }
 
