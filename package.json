@@ -3,6 +3,10 @@
   "version": "0.2.0",
   "license": "MIT",
   "repository": "LinusU/ico-to-png",
+  "files": [
+    "index.d.ts",
+    "index.js"
+  ],
   "scripts": {
     "test": "standard && mocha"
   },
