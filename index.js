@@ -4,7 +4,7 @@ const resizeImageData = require('resize-image-data')
 
 function toPng (image) {
   return (image.type === 'png')
-    ? Promise.resolve(Buffer.from(image.data.buffer, image.data.byteLength, image.data.byteOffset))
+    ? Promise.resolve(Buffer.from(image.data.buffer, image.data.byteOffset, image.data.byteLength))
     : lodepng.encode(image)
 }
 
